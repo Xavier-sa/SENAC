@@ -1,0 +1,282 @@
+Algoritmo intervalo_100_200
+  declare: numero: inteiro;
+Inicio
+  escreva("insira um número inteiro:");
+  leia(numero)
+  se (numero>=100) && <=200) então:
+       escreva("este numero esta entre 100 e 200":);
+  senão:
+  escreva("O numero não esta e não é igual a 100 e 200":);
+  fim se
+FIM
+  
+
+Algoritmo a_b
+  declare: num A: inteiro;
+  declare: num B: inteiro;
+Inicio
+  escreva("insira o valor de A":);
+  leia(numero)
+  escreva("insira o valor de B":);
+  leia(numero)
+  se (numero A > B) então:
+     escreva("numero A é maior e B é menor":);
+  senão se (numero B > A) então:
+     escreva("numero B é maior e A é menor":);
+  senão:
+     escreva("A é igual a B":);
+  fim se
+FIM
+
+ATIVIDADES: PORTUGOL
+
+1 Escreva um algoritmo em PORTUGOL que leia um número e o imprima caso ele seja
+maior que 20.
+
+Algotitmo maior_que_20
+  declare: num: inteiro;
+Inicio
+  escreva("insira um número":);
+  leia(num)
+  se (num > 20) então:
+    escreva("Número maior que 20":);
+  senão se (num < 20) então:
+    escreva("Número menor que 20":);
+  senão:
+     escreva("Número igual a 20":)
+  fim se
+FIM
+
+2 Construa um algoritmo em PORTUGOL que leia dois valores numéricos inteiros e
+efetue a adição; caso o resultado seja maior que 10, apresentá-lo.
+
+Algoritmo numeros_inteiros
+   declare: num1:num2: soma inteiro;
+Inicio
+   escreva("insira o primeiro número":);
+   leia(num1)
+   escreva("insira o segundo número":);
+   leia(num2)
+   soma = numero1 + numero2;
+   se (resultado > 10) então:
+      escreva(resultado)
+   senão:
+      escreva("Resultado menor ou igual a 10":);
+   fim se
+FIM
+
+3 Construa um algoritmo em PORTUGOL que determine (imprima) se um dado número
+N inteiro (recebido através do teclado) é PAR ou ÍMPAR.
+
+Algoritmo par_impar
+   declare: num: nao inteiro;
+Inicio
+   escreva("insira um número não inteiro":);
+   leia(num)
+   se (ultimo num for/2) então:
+      escreva("este numero é par":);
+   senão:
+      escreva("este número é impar":);
+   fim se
+FIM
+
+4 Escreva um algoritmo em PORTUGOL para determinar se um dado número N (recebido
+através do teclado) é POSITIVO, NEGATIVO ou NULO.
+
+Algoritmo positivo_negativo_nulo
+   declare: num: inteiro;
+Inicio
+   escreva("insira um número inteiro":);
+   leia(num)
+   se (num > 0) então:
+     escreva("este numero é positivo":);
+   se (num < 0) então:
+     escreva("este numero é negativo":);
+   se (num == 0) então:
+      escreva("este numero é nulo":);
+   fim se
+Fim
+
+
+5 Construir um algoritmo em PORTUGOL que leia dois números e efetue a adição. Caso
+o valor somado seja maior que 20, este deverá ser apresentado somando-se a ele mais
+8; caso o valor somado seja menor ou igual a 20, este deverá ser apresentado
+subtraindo-se 5.
+
+Algoritmo adiçao_numeros
+   declare: num1: num2: inteiro: soma: subtração:
+Inicio
+   escreva("insira o primeiro numero inteiro":);
+   leia(num1)
+   escreva("insira o segundo numero inteiro":);
+   leia(num2)
+   soma: num1 + num2
+   se (resultado > 20) então:
+    soma: resultado + 8
+   se (resultado < 20) então:
+    subtraia: resultado - 5
+   fim se
+Fim
+
+6 Escreva um algoritmo em PORTUGOL que leia um número e imprima a raiz quadrada
+do número caso ele seja positivo ou igual a zero e o quadrado do número caso ele seja
+negativo.
+
+Algoritmo raiz_quadrada
+   declare: num: raiz: quadrado: inteiro:
+Inicio
+   escreva("insira o primeiro numero inteiro":);
+   leia(num)
+   se (num >== 0) então:
+    raiz:√resultado
+   se (num < 0) então:
+    quadrado: x2 resultado
+   fim se
+Fim
+
+7 Escreva um algoritmo em PORTUGOL que receba um número e imprima uma das
+mensagens: “é múltiplo de 3” ou “não é múltiplo de 3”.
+   
+Algoritmo multiplo_3
+   declare: num: inteiro: mult: divisao: resto:
+Inicio
+   escreva("insira o um numero inteiro":);
+   leia (num)
+   divisão = num / 3;
+   mult = divisao * 3;
+   resto = num - mult
+   se( resto == 0) então:
+       escreva("é divisivel por 3");
+   senão:
+       escreva("não é divisivel por 3");
+   fim se
+Fim
+   
+   
+  
+Fim
+
+8 Escreva um algoritmo em PORTUGOL que leia um número e informe se ele é ou não
+divisível por 5.
+
+Algoritmo divisivel_5
+   declare: num: inteiro: divisão: multi: resto:
+Inicio
+   escreva("insira o um numero inteiro":);
+   leia (num)
+   divisão = num / 5;
+   multi = divisão * 5;
+   resto = num - multi
+     se( resto == 0) então:
+       escreva("é divisivel por 5");
+     senão:
+       escreva("não é divisivel por 5");
+   fim se
+Fim
+
+9 Escreva um algoritmo em PORTUGOL para determinar se um número A é divisível por
+um outro número B. Esses valores devem ser fornecidos pelo usuário.
+
+Algoritmo A_divisivel_B
+   declare: numA: numB: divisao: mult: resto:
+Inicio
+   escreva("insira o A numero inteiro":);
+   leia(numA)
+   escreva("insira o B numero inteiro":);
+   leia(numB)
+   divisão = numA / numB;
+   multi = numB * divisao;
+   resto = numA - mult:
+   se( resto == 0) entao:
+       escreva("numA é divisivel por numB");
+   senão:
+       escreva("numA não é divisivel por numB");
+   fim se
+Fim
+
+10 Construa um algoritmo em PORTUGOL que imprima qual o menor e qual o maior
+valor de dois números A e B, lidos através do teclado
+
+Algoritmo maior_menor
+   declare: num1: num2: inteiro;
+Inicio
+   escreva("insira o primeiro numero inteiro":);
+   leia(num1)
+   escreva("insira o segundo numero inteiro":);
+   leia(num2)
+   se (num1 > num2) então:
+      escreva("o primeiro numero é maior e o segundo numero é menor":)
+   senão se (num1 < num2) então:
+      escreva("o primeiro numero é menor e o segundo numero é maior":)
+   senão:
+      escreva("os numeros são nulos":);
+   fim se
+FIM
+
+11 Escreva um algoritmo em PORTUGOL que leia um número e informe se ele é divisível
+por 3 e por 7
+
+Algoritmo 3_7
+   declare: num: inteiro: divisão: multi: resto:
+Inicio
+   escreva("insira o um numero inteiro":);
+   leia (num)
+   divisão = num / 3;
+   multi = divisão * 3;
+   resto = num - multi
+     se( resto == 0) então:
+       escreva("é divisivel por 3");
+     senão:
+       escreva("não é divisivel por 3");
+     divisão = num / 7;
+     multi = divisão * 7;
+     resto = num - multi
+     se( resto == 0) então:
+       escreva("é divisivel por 7");
+     senão:
+       escreva("não é divisivel por 7");
+     fim se
+Fim
+
+
+12 A prefeitura de Contagem abriu uma linha de crédito para os funcionários estatutários.
+O valor máximo da prestação não poderá ultrapassar 30% do salário bruto. Fazer um
+algoritmo que permita entrar com o salário bruto e o valor da prestação, e informar se
+o empréstimo pode ou não ser concedido.
+      
+
+Algoritmo salario_bruto
+   descreva: num1:  num2: numeroreal: num3: inteiro: porc1:  porc2:
+Inicio
+   escreva("informe seu salario":);
+   leia(num1)
+   escreva("qual o valor gostaria de pegar emprestado":)
+   leia(num2)
+   escreva("em quantas parcelas deseja parcelar o valor do emprestimo":);
+   leia(num3)
+   porc1 = 30 * num1 / 100
+   empr = num2 / num3
+   porc2 = 30 * num2 / 100 
+   se (porc2 > porc1) então:
+      escreva("emprestimo indisponivel, pois, a parcela ultrapassa 30% do seu salario":);
+   se (porc2 <= porc1) então:
+      escreva("parabens emprestimo consedido com sucesso":);
+   fim se
+Fim
+   
+  
+   
+
+   
+
+
+   
+
+   
+ 
+    
+   
+  
+
+
+
