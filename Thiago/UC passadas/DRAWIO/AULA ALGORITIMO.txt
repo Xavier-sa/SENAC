@@ -1,0 +1,104 @@
+EXERCICIOS
+05/04/2024
+1-FAÇA UM ALGORITMO QUE RECEBA DOIS NÚMEROS E EXIBA O RESULTADO DA SUA SOMA.
+
+
+
+
+Algoritmo soma_dois_numeros
+	declare numero1:inteiro;
+	declare numero2:inteiro;
+	declare resultado:inteiro;
+inicio
+	escreva("insira o primeiro número:")
+	leia(numero1);
+	escreva("insira o segundo número:")
+	leia(numero2);
+	
+	resultado:numero1+numero2;
+	escreva("A soma é:"+resultado);
+fim
+
+
+
+2-FAÇA UM ALGORTIMO QUE RECEBA UM NUMERO INTEIRO E IMPRIMA NA TELA O SEU ANTECESSOR E O SEU SUCESSOR?
+
+Algoritmo sucessor_antecessor
+	declare numero,antecessor,sucessor:inteiro;
+	
+inicio
+	escreva("informe um número:")
+	leia(numero);
+	
+	antecessor=numero-1;
+	sucessor=numero+1;
+
+	escreva("Antecessor:"+antecessor);
+	escreva("Sucessor:"+sucessor);
+fim
+	
+
+3-FAÇA UM ALGORITMOO QUE RECEBA DOIS NÚMEROS E AO FINAL MOSTRE A SOMA, SUBTRAÇÃO, MULTIPLICAÇÃO E A DIVISÃO DOS NÚMEROS LIDOS.
+
+Algoritmo soma_subtracao_multiplicacao_divisao
+	declare numero1;numero2:resultado;inteiro;
+
+inicio
+	escreva("insira o primeiro número:")
+	leia(numero1);
+	escreva("insira o segundo número:")
+	leia(numero2);
+	soma:numero1+numero2;
+	subtracao:numero1-numero2;
+	multiplicacao:numero1*numero2;
+	divisao:numero1/numero2;
+	
+	
+	escreva("A soma é:"+resultado);
+	
+fim
+
+
+4-ESCREVER UM ALGORITMO PARA DETERMINAR O *CONSUMO MEDIO* DE UM AUTOMOVEL SENDO FORNECIDA A *DISTANCIA TOTAL* PERCORRIDA PELO AUTOMOVEL E O *TOTAL DE COMBUSTIVEL GASTO*.
+
+Algoritmo consumo_medio_automovel
+	declare distancia_total_km,combustivel_gasto_litros,consumo_medio;
+
+inicio
+	escreva:("insira a distancia total");
+	leia:(distancia_total_km);
+
+	escreva:("combustivel gasto");
+	leia:(combustivel_gasto_litros)
+
+	consumo = distancia/combustivel;
+	escreva:("o consumo é:"+resultado);
+	
+fim
+
+
+
+5-ESCREVER UM ALGORITMO QUE LEIA O NOME DE UM ALUNO E AS NOTAS DAS TRÊS PROVAS QUE ELE OBTEVE NO SEMESTRE. NO FINAL INFORMAR O NOME DO ALUNO E A SUA MÉDIA ARTMETICA
+
+Algoritmo media_aritmetica
+	declare nome aluno 
+	declare nota1,nota2,nota3;
+
+
+inicio 
+	escreva:("nome aluno"
+	leia:(nome_aluno)
+
+	escreva:("insira nota1");
+	leia:(nota1)
+
+	escreva:("insira nota2");
+	leia:(nota2)
+	
+	escreva:("insira nota3");
+	leia:(nota2)
+
+	media:nota1+nota2+nota3/3
+	escreva:("nome_aluno":media
+fim
+
