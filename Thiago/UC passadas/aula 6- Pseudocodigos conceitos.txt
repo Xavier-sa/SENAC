@@ -1,0 +1,256 @@
+1. Faça um algoritmo que receba dois números e exiba o resultado da sua soma.
+
+Algoritmo soma_dois_numeros
+     	declare numero1:inteiro;
+	declare numero2:inteiro;
+	declare o resultado:inteiro;
+Início
+	escreva ('Digite o primeiro número: ')
+    	leia (numero1)
+
+    	escreva ('Digite o segundo número: ')
+    	leia (numero2)
+
+    	soma = numero1 + numero2
+    	escreva ('A soma dos números é: ', Soma)
+Fim
+
+
+2. Faça um algoritmo que receba dois números e ao final mostre a soma, subtração,
+multiplicação e a divisão dos números lidos.
+
+Algoritmo soma_dois_numeros
+	declare num1:inteiro;
+	declare num2:inteiro;
+	declare soma:inteiro;
+	declare multiplicacao:inteiro;
+Início
+      	escreva ('Digite o primeiro número:')
+   	leia num1
+
+    	escreva ('Digite o segundo número:' )
+   	leia num2
+
+   	soma = num1 + num2
+
+    	subtracao = num1 - num2
+
+    	multiplicacao = num1 * num2
+
+    	divisao = num1 / num2
+
+   	escreva ('soma:'+soma)
+	escreva ('subtracao:'+subtracao)
+	escreva ('multiplicacao:'+multiplicacao)
+	escreva ('divisao:' + divisao)
+Fim
+
+
+3. Escrever um algoritmo para determinar o consumo médio de um automóvel sendo
+fornecida a distância total percorrida pelo automóvel e o total de combustível gasto.
+
+Algoritmo consumo_medio_combustivel
+	declare distancia total em KM:int;
+	declare combustivel em litros:int;
+
+Início
+	escreva ('Digite a distância total percorrida (em km):')
+	leia (distancia)
+
+	escrever ('Digite o total de combustível gasto (em litros):')
+	leia (combustivel)
+
+	consumoMedio: distancia / combustivel
+	escreva ('O consumo médio do automóvel é: '+ ConsumoMedio + 'km/litros' )
+Fim
+
+4. Escrever um algoritmo que leia o nome de um vendedor, o seu salário fixo e o total de
+vendas efetuadas por ele no mês (em dinheiro). Sabendo que este vendedor ganha 15%
+de comissão sobre suas vendas efetuadas, informar o seu nome, o salário fixo e salário
+no final do mês.
+
+Algoritmo Calculo_comissao
+	declare nome_vendedor; 
+	declare salario_fixo;
+	declare total_vendas;
+	declare comissao;
+	declare salario_total;
+
+Incio
+	escreva('Digite o nome do Vendedor:')
+	leia (nome do vendedor)
+
+	escreva('Salario fixo do vendedor:')
+	leia (salario fixo)
+
+	escreva('Informe o total de vendas:')
+	leia (total de vendas)
+	
+	comissao = 0.15 * total_vendas
+	salario_total = salario_fixo + comissao
+	
+	escreva('O vendedor' ,nome_vendedor, 'recebera um total em R$' ,salario_total, 'no final do mes.')
+Fim 
+
+
+5. Escrever um algoritmo que leia o nome de um aluno e as notas das três provas que ele
+obteve no semestre. No final informar o nome do aluno e a sua média (aritmética).
+
+Algoritmo Calcule_media_aluno
+	declare nome_aluno, nota1, nota2, nota3,media.
+
+Inicio
+	escreva('informe o nome do aluno:')
+	leia(nome_aluno)
+	
+	escreva('informe nota1:')
+	leia(nota1)
+
+	escreva('informe nota2:')
+	leia(nota2)
+
+	escreva('informe nota3:')
+	leia(nota3)
+	
+	media = (nota1+nota2+nota3) /3
+	
+	escreva('o aluno' ,nome_aluno, 'obteve a media' ,media)
+Fim
+
+
+6. Ler dois valores para as variáveis A e B, e efetuar as trocas dos valores de forma que a
+variável A passe a possuir o valor da variável B e a variável B passe a possuir o valor
+da variável A. Apresentar os valores trocados.
+
+Algoritmo troca_valores
+	Declare A; B; Temp; inteiro
+
+Inicio
+	Escreva ('Digite o valor de A:')
+	Ler (A)
+
+	Escrever ('Digite o valor de B:')
+	Ler (B)
+
+	Temp <- A
+	A <- B
+	B <- Temp
+
+    Escreva ('Após a troca, o valor de A é: ', A)
+    Escreva ('Após a troca, o valor de B é: ', B)
+Fim
+
+
+7. Ler uma temperatura em graus Celsius e apresentá-la convertida em graus Fahrenheit.
+A fórmula de conversão é: F=(9*C+160) / 5, sendo F a temperatura em Fahrenheit e C
+a temperatura em Celsius.
+
+Algoritmo Conversao_Celcius
+	declare celcius;fahrenheit; real
+
+Inicio
+	escreva('Informe a temperatura em graus celcius:')
+	leia(celcius)
+	
+	fahrenheit = (9 * celcius + 160) / 5
+	
+	escreva ('Temperatura em graus fahrenheit é:' ,fahrenheit)
+
+Fim
+
+
+8. Elaborar um algoritmo que efetue a apresentação do valor da conversão em real (R$)
+de um valor lido em dólar (US$). O algoritmo deverá solicitar o valor da cotação do
+dólar e também a quantidade de dólares disponíveis com o usuário.
+
+Algoritmo conversao_real_em_dolar
+	declare cotacao; quantidade_dolares; valor_em_reais;real
+
+Inicio
+	escreva('Digite o valor da cotacao do dolar:')
+	leia(cotacao)
+	
+	escreva('Digite quantidade de dolares:')
+	leia(quantidade_dolares)
+	
+	valor_em_reais = quantidade_dolares * cotacao
+	
+	escreva ('O valor em reais é: R$' ,valor_em_reais
+FIM
+
+9. Faça um algoritmo que receba um valor que foi depositado e exiba o valor com
+rendimento após um mês.
+Considere fixo o juro da poupança em 0,70% a. m.
+
+Algoritmo Rendimento_mensal
+	declare valor_depositado; rendimento; valor_final; real
+	
+Inicio
+	escreva('Digite o valor depositado:')
+	leia(valor_depositado)
+	
+	rendimento = valor_depositado + 0.007
+
+	valor_final = valor_depostiado + rendimento
+		
+	escreva('Apos um mes o rendimento sera: R$' ,valor_final)
+Fim
+
+
+
+10. A Loja Mamão com Açúcar está vendendo seus produtos em 5 (cinco) prestações sem
+juros. Faça um algoritmo que receba um valor de uma compra e mostre o valor das
+prestações.
+
+Algoritmo Valor_prestacoes
+	declare valor_compra ; valor_prestacao: real
+
+Inicio
+	escreva('Digite o valor da compra:')
+	leia(valor_compra)
+	
+	valor_prestacao = valor_compra / 5
+	
+	escreva ('Cada prestacao é R$' , valor_prestacao)
+Fim
+
+11. Faça um algoritmo que receba o preço de custo de um produto e mostre o valor de
+venda. Sabe-se que o preço de custo receberá um acréscimo de acordo com um
+percentual informado pelo usuário.
+
+Algoritmo preco_custo_venda
+	declare preco_custo; acrescimo; valor_venda; real
+	
+Inicio
+	escreva('Preco de custo:')
+	leia (preco_custo)
+	
+	escreva('Acrescimo:')
+	leia (acrescimo)
+	
+	valor_venda = preco_custo + (preco_custo * acrescimo/100)
+	escreva('Valor da venda é: R$' ,valor_venda)
+Fim
+
+12. O custo ao consumidor de um carro novo é a soma do custo de fábrica com a
+percentagem do distribuidor e dos impostos (aplicados, primeiro os impostos sobre o
+custo de fábrica, e depois a percentagem do distribuidor sobre o resultado). Supondo
+que a percentagem do distribuidor seja de 28% e os impostos 45%. Escrever um
+algoritmo que leia o custo de fábrica de um carro e informe o custo ao consumidor do
+mesmo.
+
+Algoritmo Custo_consumidor 
+	declare custo_fabrica; impostos ; distribuidor ; custo_consumidor: real
+
+Inicio
+	escreva ('Informe o custo de fabrica do carro:')
+	leia (custo_fabrica)
+	
+	impostos = custo_fabrica * 0.45
+	
+	distribuidor = (custo_fabrica + impostos) *0.28
+
+	custo_consumidor = custo_fabrica + impostos + distribuidor
+	
+	escreva(' O custo ao consumidor é: R$' , custo_consumidor)
+Fim
