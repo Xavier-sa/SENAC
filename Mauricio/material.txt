@@ -1,0 +1,18 @@
+app = QApplication([])
+
+
+window = QWidget()
+window.setWindowTitle("Minha Caixa")
+
+
+layout = QVBoxLayout()
+label = QLabel("Hello, Xavier\nVamos iniciar?\nTabela:\nCodigo:")
+layout.addWidget(label)
+
+
+
+window.setLayout(layout)
+window.show()
+
+
+app.exec()

@@ -1,0 +1,4 @@
+Frameworks
+é uma estrutura ja pronta!
+
+Python, PySide6 e QtDesigner
