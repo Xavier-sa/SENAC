@@ -1,0 +1,49 @@
+Acessar WEB
+por meio de Navegadores -> acessam por meio de links!
+
+envia solicitação por meio de internet para um computador especial conhecido como servidor da Web!
+
+Servidores Web (NGINX , APACHE)
+são computadores especiais, Estao constamente CONECTADOS a INTERNET, processa milhares de requisições de pessoas que estão navegando em páginas da Web
+
+WEB funciona:
+	-um site, pode estar fisicamente em qualquer lugar do mundo.
+	-DNS-Domain Name System(sistema de nomes de domínio), basicamente a localização do servidor web.
+	-os servidores de DNS, so conseguem interagir entre si graças a internet.
+	
+Criação WEBSITES:
+	nosso proprio navegador interpreta o código HTML e CSS , para dar forma as páginas.
+	sites simples-> necessitam apenas de HMTL e CSS.
+			chamados de ESTÁTICOS:
+				-Landing Pages,
+				-Portfólios Pessoais<JA FIZ O MEU>,
+				-Documentações,
+			
+	adcione JavaScript, site se torna interativo.
+	sites complexos-> necessita de outras tecnologias para gerar o HMTL.
+			chamados de DINÂMICOS:
+				-Redes Sociais,
+				-E-commerce,
+				-Sistemas de Gestão de Conteúdo,
+				-Ferramentas online:(trello: estilo hackplan,docs,calendar)
+
+
+
+
+	FRONT-END
+		--->HTML,JS,CSS
+	BACK-END
+		--->PHP,JAVA,RUBY,ASP.NET
+	FULL STACK
+		--->MYSQL,ORACLE
+
+
+
+
+
+
+
+
+
+
+
