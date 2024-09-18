@@ -8,20 +8,19 @@ class MusicPlayer(QWidget):
     def __init__(self):
         super().__init__()
 
-        #caixa
+        # Configuração da janela
         self.setWindowTitle("Espotifai")
         self.setGeometry(300, 300, 300, 100)
         self.setWindowIcon(QIcon("Mauricio/icons8-kakarotto-16.png"))
 
 
-        #play
+      
         self.layout = QVBoxLayout()
         self.play_button = QPushButton("Play", self)
-        self.play_button.setIcon(QIcon("Mauricio/iconePLAY.png"))
         self.layout.addWidget(self.play_button)
         self.setLayout(self.layout)
 
-       #
+       
         self.player = QMediaPlayer()
         self.audio_output = QAudioOutput()
         self.player.setAudioOutput(self.audio_output)
@@ -42,8 +41,6 @@ class MusicPlayer(QWidget):
         else:
             self.player.play()
             self.play_button.setText("Pause")
-           
-            self.play_button.setIcon(QIcon("Mauricio/iconePAUSE.png")) 
 
        
         self.is_playing = not self.is_playing
