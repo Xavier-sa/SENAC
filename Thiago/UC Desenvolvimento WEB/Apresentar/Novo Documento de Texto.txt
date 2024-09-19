@@ -1,0 +1,10 @@
+correios - servidor web
+
+quais existem?  -
+
+qual linguagem? - As principais, ex: html(obs:se enquadrada como linguagem de marcação),php,css,javascript,
+
+quem criou?     -
+
+quem usa?       -
+

@@ -12,13 +12,13 @@ class MyWidget(QWidget):
         self.hello = ["Bem Vindo Xavier!", "Vamos começar?", "If-\n Oque deseja fazer?", "Else-\nOk,Vamos encerrar e ir pro intervalo!\n "]
 
         self.button = QPushButton("Clique aqui!")
-        self.text = QLabel("Wellington Aparecido Santos Xavier...")
+        self.text = QLabel("\n\tWellington Aparecido Santos Xavier\n ")
         self.text.setAlignment(Qt.AlignCenter)
 
        
         self.image_label = QLabel()
         self.image_label.setAlignment(Qt.AlignCenter)
-        self.image_label.setPixmap(QPixmap("Mauricio/broly.webp"))  
+        self.image_label.setPixmap(QPixmap("broly.webp"))  
 
         
 

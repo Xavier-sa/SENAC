@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Dados de Usuário</title>
+</head>
+<body>
+    <h1>Gerenciamento de Dados de Usuário</h1>
+
+    <h2>Adicionar Dados do Usuário</h2>
+    <form id="addUserForm">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="github">Perfil do GitHub:</label>
+        <input type="text" id="github" name="github" required>
+        <br>
+        <button type="button" onclick="submitAddUserForm()">Adicionar</button>
+    </form>
+
+    <h2>Visualizar Dados do Usuário</h2>
+    <button type="button" onclick="viewUserData()">Visualizar</button>
+    <pre id="userDataDisplay"></pre>
+
+    <h2>Alterar Senha</h2>
+    <form id="changePasswordForm">
+        <label for="oldPassword">Senha Atual:</label>
+        <input type="password" id="oldPassword" name="oldPassword" required>
+        <br>
+        <label for="newPassword">Nova Senha:</label>
+        <input type="password" id="newPassword" name="newPassword" required>
+        <br>
+        <button type="button" onclick="submitChangePasswordForm()">Alterar Senha</button>
+    </form>
+
+    <script>
+        async function submitAddUserForm() {
+            const name = document.getElementById('name').value;
+            const github = document.getElementById('github').value;
+
+            const response = await fetch('/add_user', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ name, github })
+            });
+
+            const result = await response.text();
+            alert(result);
+        }
+
+        async function viewUserData() {
+            const response = await fetch('/view_data');
+            const data = await response.text();
+            document.getElementById('userDataDisplay').textContent = data;
+        }
+
+        async function submitChangePasswordForm() {
+            const oldPassword = document.getElementById('oldPassword').value;
+            const newPassword = document.getElementById('newPassword').value;
+
+            const response = await fetch('/change_password', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ oldPassword, newPassword })
+            });
+
+            const result = await response.text();
+            alert(result);
+        }
+    </script>
+</body>
+</html>
