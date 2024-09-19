@@ -29,7 +29,7 @@ class MusicPlayer(QWidget):
         self.is_playing = False
         self.update_button()
 
-        # Conectar o botão ao método de alternância
+        # 
         self.play_button.clicked.connect(self.toggle_music)
 
     def toggle_music(self):
