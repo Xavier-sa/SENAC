@@ -1,0 +1,60 @@
+<html lang="pt-BR">
+<head>
+    <title>Projeto Integrador</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 3px solid black;
+            padding: 8px;
+            text-align: left;
+            white-space: nowrap;
+        }
+        th {
+            background-color: #F1C40F;
+        }
+        h2 {
+            text-align: center;
+        }  
+    </style>
+</head>
+<body>
+  <table><td>
+  <table>
+    <td>
+    <h2>P.I. -> INTEGRANTES</h2>
+    </td>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Github</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Wellington Aparecido Santos Xavier</td>
+                <td>wellington54098716@aluno.ms.senac.br</td>
+                <td>Xavier-sa</td>
+            </tr>
+            <tr>
+                <td>Goku</td>
+                <td>goku@hotmail.com</td>
+                <td>gokuDbz</td>
+            </tr>
+            <tr>
+                <td>Freeza</td>
+                <td>freeza@hotmail.com</td> <!-- Fixed typo from .con to .com -->
+                <td>freeza-sr</td>
+            </tr>
+        </tbody>
+    </table>
+  </td>
+    
+  </table>   
+</body>
+</html>
