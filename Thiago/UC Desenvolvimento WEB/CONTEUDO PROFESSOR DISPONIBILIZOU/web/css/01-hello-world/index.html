@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello CSS</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style type="text/css">
+        /* 
+            Isso é um comenário no CSS
+        */
+
+        /* seletor css de id */
+        #titulo2 {
+            color: red;
+            font-size: 16px;
+        }
+
+        #paragrafo2 {
+            color: green;
+            font-size: 11px;
+        }
+
+        /* seletor css por elemento */
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="font-size: 18px">
+        Minha primeira página com CSS
+    </h1>
+
+    <h2 style="
+        color: rgb(59, 181, 136);
+        font-size: 16px; "
+    >
+        Estilo em linha / Style inline
+    </h2>
+    <p style="
+        color: blue; 
+        font-size: 12px; 
+        text-align: center;"
+    >
+        O CSS é a linguagem para estilizar páginas Web.
+    </p>
+
+    <h2 id="titulo2">Estilo no elemento style</h2>
+    <p id="paragrafo2">
+        O CSS permite aplicar estilos de 3 formas diferentes.
+    </p>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+    </p>
+    
+    <h2 class="titulo">
+        Estilo externo
+    </h2>
+    <p class="paragrafo">
+        Aqui usamos um estilo externo ao HTML em nosso site.
+    </p>
+    <p class="paragrafo">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero beatae mollitia fugiat natus delectus suscipit eius voluptate nemo dolore optio? Voluptate ipsam autem voluptatibus odit expedita cupiditate, vel sequi maiores.
+    </p>
+</body>
+</html>
