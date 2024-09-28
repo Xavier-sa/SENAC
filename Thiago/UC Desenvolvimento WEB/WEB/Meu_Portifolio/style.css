@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    text-align: center; 
+}
+
+.container {
+    max-width: 800px;
+    margin: auto; 
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; 
+}
+
+
+h1, h2 {
+    color: #1a73e8;
+    margin-top: 0; 
+}
+
+.profile-img {
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%;
+    object-fit: cover; 
+    display: block; 
+    margin: 0 auto 20px auto; 
+    filter: grayscale(100%); /* Aplica filtro de escala de cinza */
+    transition: filter 0.5s ease; /* Adiciona transição suave */
+}
+
+.profile-img:hover {
+    filter: grayscale(0%); /* Remove o filtro de escala de cinza ao passar o mouse */
+}
+
+.skills, .portfolio, .testimonials, .contact, .education {
+    margin-top: 40px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; 
+}
+
+li {
+    background-color: #e9f0fb;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: left; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+li:hover {
+    background-color: #d4e4fb;
+}
+
+
+.contact a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+
+.skills {
+    padding: 0; 
+}
+
+.skills li {
+    position: relative; 
+    text-align: left; 
+    
+}
+
+.skill-icon {
+    width: 20px; 
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+    left: -30px; 
+    top: 50%; 
+    transform: translateY(-50%);
+    background-image: url('aindaaprendendo.png'); 
+    background-size: cover;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px; 
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    li {
+        font-size: 14px; 
+    }
+
+    .skill-icon {
+        width: 15px; 
+        height: 15px;
+        left: -20px;
+    }
+}
