@@ -42,7 +42,7 @@ h1, h2 {
     filter: grayscale(0%); /* Passa o mouse */
 }
 
-.skills, .portfolio, .contato, .formacao {
+.skills, .contato, .formacao {
     margin-top: 40px;
 }
 
