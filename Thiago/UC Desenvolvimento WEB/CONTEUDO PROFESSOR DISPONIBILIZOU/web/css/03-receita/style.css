@@ -1,0 +1,22 @@
+body {
+    font-family: "Noto Sans", sans-serif;
+    background-color: #FAF7F0;
+    color: #4A4947;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin: 0 0 14px 0;
+    /* margin-bottom: 14px; */
+}
+
+img {
+    border-radius: 14px;
+    display: block;
+    margin: 0 auto;
+}
+
+h2 {
+    margin: 26px 0;
+}
