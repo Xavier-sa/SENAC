@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #d5d5c9;
+}
+
+nav {
+    background-color: #23232e;
+    display: flex;
+    /* alinhamento horizontal */
+    justify-content: space-around;
+    /* alinhamento vertical */
+    align-items: center;
+    height: 8vh;
+}
+
+.logo {
+    /* transforma o texto em caixa alta */
+    text-transform: uppercase;
+    /* aplica espaçamento entre letras */
+    letter-spacing: 4px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:hover {
+    opacity: 0.7;
+    transform: scale(1.2);
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    letter-spacing: 2px;
+}
+
+ul li {
+    display: inline-flex;
+}
+
+main {
+    height: 92vh;
+    background-image: url('Projeto_Disciplina_web/navbar/assets/porta_img6.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: center;
+    /* background: url('assets/setup-1.jpg') no-repeat center center; */
+    background-size: cover;
+}
