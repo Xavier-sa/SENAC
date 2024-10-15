@@ -1,3 +1,49 @@
-body{
-    background:color(srgb red green blue);
+
+
+
+body {
+    background-color: lightblue;
+    background-image: url("Projeto_Disciplina_web/cadastro/assets/fundocadastro.jpg");
+  }
+  
+  .form-header{
+    margin-bottom: 1rem;
+    text-align: center;
+    display: flex;
+  }
+@media (max-width:460px){
+    .form{
+        width: 60%;
+    }
 }
+
+
+
+@media (max-width:960px){
+    .form{
+        width: 40%;
+    }
+}
+
+  .form-input{
+    margin-bottom: 1rem;
+    text-align: center;
+    display: flex;
+  }
+
+  .form-submit{
+
+    margin-bottom: 1rem;
+    text-align: center;
+    display: flex;
+
+  }
+
+  h2 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  
+  label {
+    color: rgb(0, 0, 0);
+  }
