@@ -15,7 +15,7 @@
             <div class="form-header">
                 <h4>Cadastrar produto</h4>
             </div>
-    
+
             <div class="form-content">
                 <div class="form-input required">
                     <label for="nome">Nome</label>
@@ -30,42 +30,64 @@
                     <input type="number" step="0.0" name="preco" placeholder="Informe o preço" required>
                 </div>
             </div>
-    
-            <div class="form-action">
 
-                <button type= "button"   onclick="limparForm()">Limpar</button>
-                <button type="button" onclick="gerarLista()">Enviar</button>
+            <div class="form-action">
+                <button type="button" onclick="limparForm()">Limpar</button>
+                <button type="button" onclick="adicionarProduto()">Enviar</button>
             </div>
         </form>
         <ul id="produtos">
-            
+
         </ul>
-    
-        </main>
+
+        <div class="calculadora">
+            <p>Soma 2 numeros</p>
+            <div>
+                <label for="">A</label>
+                <input type="number" name="A">
+            </div>
+            <div>
+                <label for="">B</label>
+                <input type="number" name="B">
+            </div>
+            <div>
+                <label for="">res</label>
+                <input type="text" name="R">
+            </div>
+            <div>
+                <button onclick="soma()">Somar</button>
+            </div>
+        </div>
+    </main>
+
     <script>
-        
-        function limparForm(){
-            console.log("limparForm")
+        function soma() {
+            const a = document.querySelector('[name="A"]').value
+            const b = document.querySelector('[name="B"]').value
+
+            document.querySelector('[name="R"]').value = Number(a) + Number(b)
+        }
+
+        function limparForm() {
+            console.log('limparForm')
             document.querySelector('input[name="nome"]').value = ''
             document.querySelector('input[name="descricao"]').value = ''
             document.querySelector('input[name="preco"]').value = ''
-
-
         }
 
-       
-    
-        function gerarLista(){
-            console.log("CRIAR LISTA")
-            const nome = document.querySelector('input[name="nome"]').value 
+        function adicionarProduto() {
+            console.log('adicionaProduto')
+            const nome = document.querySelector('input[name="nome"]').value
             const descricao = document.querySelector('input[name="descricao"]').value
             const preco = document.querySelector('input[name="preco"]').value
-           
-            const produtoNovo = `<p>nome: ${nome}</p> <p>descrição: ${descricao}`
-            console.log(`nome: ${nome},\n descrição: ${descricao},\n preço: ${preco}`)
 
-            const elementolista = document.querySelector('#produtos') 
-            elementolista.innerHTML = `<li>${elementolista}</li>`
+            const produtoNovo = `<p>nome: ${nome}</p> <p>descrição: ${descricao}</p> <p>preço: ${preco}</p>`
+            console.log(produtoNovo) // print(f'Texto texto {variavel}')
+
+            const elementoLista = document.querySelector('#produtos')
+            elementoLista.innerHTML += `<li>${produtoNovo}</li>`
+
+            limparForm()
         }
     </script>
 </body>

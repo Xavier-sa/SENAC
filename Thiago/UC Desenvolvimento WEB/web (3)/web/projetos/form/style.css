@@ -66,3 +66,7 @@ main {
 ul {
     list-style: unset;
 }
+
+.calculadora {
+    margin-top: 20px;
+}
