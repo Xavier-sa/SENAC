@@ -1,6 +1,5 @@
 body{
 
-
     font-family: arial, sans-serif;
 
 }
@@ -11,3 +10,21 @@ body{
     width: 200px;
     
 }
+
+.password{
+    width: 100%;
+    position: relative;   
+   
+}
+
+.password input{
+    width: 100;
+
+}
+
+.password i{
+    position:absolute;
+    right: 40px;
+    top: 2px;
+}
+
