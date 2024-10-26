@@ -73,4 +73,5 @@ h4 {
 .card-container .card img {
     width: 200px;
     max-width: 200px;
+    border-radius: 14px;    
 }
