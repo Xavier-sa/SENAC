@@ -1,0 +1,51 @@
+Você tem um banco de dados de uma biblioteca com as
+seguintes tabelas e dados:
+CREATE TABLE Authors (
+ AuthorID INT PRIMARY KEY,
+ Name VARCHAR(100),
+ BirthYear INT
+);
+CREATE TABLE Books (
+ BookID INT PRIMARY KEY,
+ Title VARCHAR(200),
+ AuthorID INT,
+ FOREIGN KEY (AuthorID) REFERENCES Authors(AuthorID)
+);
+CREATE TABLE Loans (
+ LoanID INT PRIMARY KEY,
+ BookID INT,
+ MemberID INT,
+ LoanDate DATE,
+ ReturnDate DATE,
+ FOREIGN KEY (BookID) REFERENCES Books(BookID)
+);
+Dados de Exemplo
+INSERT INTO Authors (AuthorID, Name, BirthYear) VALUES
+(1, 'J.K. Rowling', 1965),
+(2, 'George R.R. Martin', 1948),
+(3, 'J.R.R. Tolkien', 1892);
+INSERT INTO Books (BookID, Title, AuthorID) VALUES
+(1, 'Harry Potter and the Sorcerer\'s Stone', 1),
+(2, 'A Game of Thrones', 2),
+(3, 'The Hobbit', 3),
+(4, 'Harry Potter and the Chamber of Secrets', 1);
+INSERT INTO Loans (LoanID, BookID, MemberID, LoanDate, ReturnDate) VALUES
+(1, 1, 101, '2024-01-10', '2024-01-17'),
+(2, 2, 102, '2024-02-05', NULL),
+(3, 1, 103, '2024-01-15', '2024-01-22'),
+(4, 3, 104, '2024-01-20', NULL);
+Realize as seguintes consultas SQL:
+1. Listar todos os livros com seus autores.
+2. Listar todos os empréstimos, mostrando o título do livro emprestado e o membro que
+fez o empréstimo.
+3. Listar todos os autores e os livros que eles escreveram, mesmo que alguns autores não
+tenham livros.
+4. Listar todos os livros e os empréstimos feitos, mostrando os livros que não estão
+emprestados.
+5. Contar quantos livros foram emprestados.
+6. Listar todos os autores e a quantidade de livros que cada um escreveu.
+Após completar as consultas acima, faça o seguinte:
+1. Adicionar um novo autor e um novo livro a esse autor.
+2. Registrar um novo empréstimo para o novo livro
+3. Verificar se o novo livro foi adicionado corretamente.
+May th
