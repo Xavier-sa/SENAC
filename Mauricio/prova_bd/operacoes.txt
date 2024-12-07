@@ -1,0 +1,20 @@
+use hotelwx
+create table quartos : 
+			disponivel; sim/ nao 
+		        tipo: simples , duplo, suíte;
+			preço: ;
+			status: disponivel, reservado,ocupado;
+use quartos
+create table hospedes:
+			nome , documento (cpf), contato;
+
+use quartos
+create table reservas :
+			hospedes, datas check-in e check-out;
+
+
+use hotelwx:
+create table funcionarios:
+			nome,cargo, horario de trabalho;
+
+use
